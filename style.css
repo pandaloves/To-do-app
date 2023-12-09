@@ -1,0 +1,74 @@
+/*General settins*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Monserrat" sans-serif;
+  color: white;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 2px;
+  padding: 20px;
+  background: linear-gradient(
+    68.6deg,
+    rgb(57, 67, 248) 38.1%,
+    rgb(192, 0, 255) 93.1%
+  );
+}
+
+form {
+  margin: 0.05rem auto;
+  padding: 2px;
+}
+input {
+  width: 180px;
+  height: 36px;
+  font-size: 15px;
+  color: black;
+  margin-right: 1px;
+}
+button {
+  margin: 1px;
+  color: black;
+  width: 60px;
+  height: 36px;
+  font-size: 13px;
+  background: rgb(199, 196, 196);
+  cursor: pointer;
+}
+
+/* Different elements*/
+h1 {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 0.5rem auto 1rem;
+  text-shadow: 1px 1px 2px rgb(42, 40, 40);
+  text-align: center;
+}
+#plan {
+  margin: 0.5rem auto 1rem;
+}
+h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: 0 auto 0.5rem;
+}
+#busy:invalid {
+  border: 2px solid red;
+}
+#doing {
+  display: none;
+}
+#finish {
+  display: none;
+}
+#error {
+  margin: 10px auto;
+  display: none;
+}
+#warning {
+  font-size: 20px;
+  color: red;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>To Do Application</h1>
+    <main>
+      <form id="plan">
+        <input
+          type="text"
+          placeholder="Your work"
+          name="busy"
+          id="busy"
+          required
+        />
+        <button id="addBt">Add</button>
+        <button id="initBt">Reset</button><br />
+      </form>
+      <div id="error">
+        <span id="warning">Unable to create empty tasks</span>
+      </div>
+      <form id="doing">
+        <h2>To do</h2>
+        <ul></ul>
+      </form>
+      <form id="finish">
+        <h2>Finished</h2>
+        <ul></ul>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
