@@ -3,40 +3,47 @@
   margin: 0;
   padding: 0;
   font-family: "Monserrat" sans-serif;
-  color: white;
+  color: rgb(45, 42, 42);
   box-sizing: border-box;
 }
 body {
-  width: 100%;
+  margin: auto;
+  width: 60%;
   min-height: 100vh;
-  margin: 0 2px;
   padding: 20px;
   background: linear-gradient(
     68.6deg,
-    rgb(57, 67, 248) 38.1%,
-    rgb(192, 0, 255) 93.1%
+    rgb(248, 249, 242) 38.1%,
+    rgb(245, 246, 239) 93.1%
   );
 }
-
+main {
+  width: 100%;
+}
 form {
   margin: 0.05rem auto;
   padding: 2px;
 }
 input {
-  width: 180px;
+  width: 100%;
   height: 36px;
   font-size: 15px;
-  color: black;
-  margin-right: 1px;
+  color: rgb(32, 29, 29);
+  border-radius: 12px;
+  padding: 0 5px;
 }
 button {
-  margin: 1px;
-  color: black;
-  width: 60px;
+  margin: 10px;
+  color: white;
+  width: 80px;
   height: 36px;
   font-size: 13px;
-  background: rgb(199, 196, 196);
+  background: hsl(340deg 100% 32%);
+  border-radius: 12px;
+  border: none;
+  padding: 10px;
   cursor: pointer;
+  outline-offset: 4px;
 }
 
 /* Different elements*/
@@ -70,5 +77,30 @@ h2 {
 }
 #warning {
   font-size: 20px;
-  color: red;
+  color: hsl(340deg 100% 32%);
 }
+/* Extra large devices (large laptops and desktops, 1200px) */
+@media only screen and (max-width: 1200px) {
+  body {
+    width: 70%;
+  }
+}
+/* Large devices (laptops/desktops, 992px) */
+@media only screen and (max-width: 992px) {
+  body {
+    width: 80%;
+  }
+}
+/* Medium devices (landscape tablets, 768px) */
+@media only screen and (max-width: 768px) {
+  body {
+    width: 90%;
+  }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    width: 98%;
+  }
+}
+
